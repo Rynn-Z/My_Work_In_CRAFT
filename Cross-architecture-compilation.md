@@ -55,6 +55,7 @@ aarch64-linux-gnu-g++ mytest.c -static -o mytest
 ## git
 ```
 https://blog.csdn.net/m0_37592397/article/details/78664757
+https://zhuanlan.zhihu.com/p/136355306
 
 设置安全目录
 git config --global --add safe.directory /root/.ssh
