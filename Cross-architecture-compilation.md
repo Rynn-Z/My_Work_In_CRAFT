@@ -36,7 +36,7 @@ git clone https://github.com/gem5/gem5.git
 ```
 
 ```
-sudo apt install build-essential git m4 scons zlib1g zlib1g-dev libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev python3-dev python-is-python3 libboost-all-dev pkg-config
+apt install build-essential git m4 scons zlib1g zlib1g-dev libprotobuf-dev protobuf-compiler libprotoc-dev libgoogle-perftools-dev python3-dev python-is-python3 libboost-all-dev pkg-config
 ```
 
 ```
@@ -73,12 +73,13 @@ https://linux-packages.com/linux-mint-20-3/package/gfortran-aarch64-linux-gnu
 https://zhuanlan.zhihu.com/p/345232459
 ```
 ## spec
+```
+apt install p7zip-full
+7z x cpu2017-1.0.2.iso -o./spec2017
+
 spec2006：
-```
 https://pacman.cs.tsinghua.edu.cn/~whj/pubs/cpu2006-1.2.iso
-```
 spec2017：
-```
 https://pacman.cs.tsinghua.edu.cn/~whj/pubs/cpu2017-1.0.2.iso
 ```
 
