@@ -134,9 +134,6 @@ https://blog.csdn.net/fandroid/article/details/45701463
 spec2017运行指南
 https://www.spec.org/cpu2017/Docs/install-guide-unix.html#test
 
-spec排bug
-https://blog.csdn.net/Z_july/article/details/108001228
-
 gem5 run spec2017 detail
 https://zhuanlan.zhihu.com/p/607111813
 
@@ -160,7 +157,7 @@ spec2017
 source shrc
 ulimit -s unlimited
 
-runcpu --config=spec2017_X86 --reportable intrate intspeed fprate fpspeed
+runcpu --config=spec2017-x86 --reportable intrate intspeed fprate fpspeed
 ```
 
 g++/aarch64 build a test and gem5 run
