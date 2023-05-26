@@ -134,6 +134,9 @@ https://blog.csdn.net/fandroid/article/details/45701463
 spec2017运行指南
 https://www.spec.org/cpu2017/Docs/install-guide-unix.html#test
 
+520,620 bug
+https://github.com/ccelio/Speckle/issues/21
+
 gem5 run spec2017 detail
 https://zhuanlan.zhihu.com/p/607111813
 
