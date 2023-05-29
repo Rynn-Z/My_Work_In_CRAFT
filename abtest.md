@@ -14,3 +14,16 @@
 
 - if N * p_hat > 5, then you can assume it is normal.
 you should also check N * (1 - p_hat) > 5 satisfied.
+
+## 合并标准误差：
+- 合并概率：p_hat = (x1 + x2) / (n1 + n2)
+- 合并标准误差：se = sqrt(p_hat * (1 - p_hat) * (1 / n1 + 1 / n2))
+
+## 实际显著性（是否看到你感兴趣的改变）
+- 显著性差异：不同领域标准不同
+- 统计显著性（假设检验） - 可重复性
+- 统计显著性低于实际显著性
+
+## 统计功效和规模
+- 二者呈负向
+- 确保功效，得到高概率结果 -> 具有统计显著性
