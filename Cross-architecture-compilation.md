@@ -142,6 +142,9 @@ https://github.com/ccelio/Speckle/issues/21
 gem5 run spec2017 detail
 https://zhuanlan.zhihu.com/p/607111813
 
+spec2017 name
+https://blog.csdn.net/qq_38877888/article/details/109018714
+
 gem5 checkpoint
 https://blog.csdn.net/wyj7260/article/details/44340079
 
