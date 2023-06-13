@@ -1,4 +1,4 @@
-# A/B TEST
+# A/B TEST 
 A/B TEST的目的是收集数据，作出决定。在置信区间内计算效能，为了判断我们的结果有多大可能具有可重复性与合理性，并做出正确的决定。
 
 ## When can you use A/B testing：session 3
@@ -11,14 +11,18 @@ A/B TEST的目的是收集数据，作出决定。在置信区间内计算效能
 - Customer funnel
 - click-through-rate and click-through-probability
 - if N * p_hat > 5, then you can assume it is normal.
-you should also check N * (1 - p_hat) > 5 satisfied.
+you should also check N * (1 - p_hat) > 5 satisfied. (big data)
 
 ## 合并标准误差：
-- 合并概率：p_hat = (x1 + x2) / (n1 + n2)
-- 合并标准误差：se = sqrt(p_hat * (1 - p_hat) * (1 / n1 + 1 / n2))
-- 预计差异：d_hat = x1/n1 - x2/n2
+- 合并概率：$\hat{p} = \frac{x_1 * n_1 + x_2 * n_2}{n_1 + n_2}$
+- 合并标准误差：$se = \sqrt{\hat{p} * (1 - \hat{p}) * (1 / n_1 + 1 / n_2)}$
+- 预计差异：$\hat{d} = x_1/n_1 - x_2/n_2$
 - 误差幅度：m = se * 置信水平对应上分位数（双侧）
-- 置信水平下限：d_hat - m（上限同理），需要大于d_min实际显著性
+- 置信水平下限：$\hat{d}$ - m（上限同理），需要大于$d_{min}$实际显著性
+- 检验统计量：
+$$
+z = \frac{(p_1 - p_2) - d_{min}}{se}
+$$
 
 ## 实际显著性（是否看到你感兴趣的改变）
 - 显著性差异：不同领域标准不同
@@ -77,3 +81,21 @@ you should also check N * (1 - p_hat) > 5 satisfied.
 ### 其他定义指标技巧
 - 更好的使用外部数据
 - 更好的使用内部数据
+### 收集更多数据技巧
+- 用户体验研究：对几个用户进行深入研究
+1. 对头脑风暴十分有用
+2. 可以使用特殊试验
+3. 验证结果
+- 焦点小组访谈：用比UER更多的用户交流，但不能和每个人深入交流
+1. 从假设性问题获得反馈
+2. 群里思维的风险
+- 调查：招募一群人，在线/面对面/通话，成本低-高量化性-无深度交流
+1. 采集自己不能直接测量的指标十分有用
+2. 不能直接和其他结果进行对比（真实性）
+- 额外的数据
+- 回顾性分析
+- 实验
+### 指标定义和数据捕捉
+将指标的高级概念转化为可以认识充分的定义
+- 完全准确的定义：哪些数据有用
+- 如何概括指标 ：数据怎么用怎么计算指标
