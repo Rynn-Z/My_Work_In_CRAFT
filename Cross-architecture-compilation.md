@@ -313,3 +313,11 @@ note:simTicks, mem_ctrl.*total
 two tables:regard ds-config as different types
 run:all the spec benchmarks
 ```
+
+- java6
+export ANT_HOME=/root/apache-ant
+export ALT_BOOTDIR=/root/jdk1.6.0_45/
+export C_INCLUDE_PATH=/root/jdk6-master_arm/deb_bag/freetype2/usr/include:/root/jdk6-master_arm/deb_bag/freetype2/usr/include/freetype2
+
+make clean
+make VERBOSE=1
