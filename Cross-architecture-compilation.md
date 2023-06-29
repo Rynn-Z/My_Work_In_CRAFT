@@ -314,10 +314,16 @@ two tables:regard ds-config as different types
 run:all the spec benchmarks
 ```
 
-- java6
+# java6
+## 项目介绍
+>因为Java1.6没有ARM版本，Java1.8有ARM版本，基于Java1.6(X86)版本开发的软件无法在ARM上运行，而将软件升级为基于Java1.8版本又需要修改大量代码。需要将Java1.6(X86)版本(jdk6-master_86)借鉴Java1.8(ARM)版本(openjdk-jdk8u-master)修改出Java1.6(ARM)版本(jdk6-master_arm)，然后将服务器在修改好的Java1.6(ARM)环境下make成功。
+```
 export ANT_HOME=/root/apache-ant
 export ALT_BOOTDIR=/root/jdk1.6.0_45/
 export C_INCLUDE_PATH=/root/jdk6-master_arm/deb_bag/freetype2/usr/include:/root/jdk6-master_arm/deb_bag/freetype2/usr/include/freetype2
 
 make clean
 make VERBOSE=1
+
+make VERBOSE=1 > 1.log 2>&1
+```
