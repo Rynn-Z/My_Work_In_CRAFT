@@ -324,6 +324,5 @@ export C_INCLUDE_PATH=/root/jdk6-master_arm/deb_bag/freetype2/usr/include:/root/
 
 make clean
 make VERBOSE=1
-
 make VERBOSE=1 > 1.log 2>&1
 ```
